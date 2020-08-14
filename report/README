@@ -1,0 +1,52 @@
+# Write your acknowledgement here..
+
+--------------Assumption:--------------
+>> For task1b and 3a, file name should be given along with file extension
+
+------------References Used:-----------
+1) Calibration Code taken from below github repo(same repo is given for reference)
+https://github.com/Anish-Saxena/Flush-Reload
+
+2) Image to binary and vice versa
+https://stackoverflow.com/questions/32527351/conversion-of-image-binary-image-using-c
+
+
+------------About Meetings:------------
+1) With Upasana:
+>> She suggested us to send more bits at a time.
+
+2) With Saurabh:
+>> He suggested us about a better way to find TPR/FPR using a python predefined library - Levenshtein
+
+3) With Biswa:
+>> He explained the reason regarding higher latency for the very first time when we access the mapped file.
+
+
+----------------Taskset:---------------
+
+taskset 0x1 will run the program in core 1
+taskset 0x2 will run the program in core 2
+
+
+--------------Steps to run:------------
+1) Task1a
+taskset 0x1 ./t1a-sender
+tasket 0x2 ./t1a-receiver
+
+2) Task1b
+taskset 0x1 ./t1b-sender
+tasket 0x2 ./t1b-receiver
+
+3) Task2a
+./task-2a [probe_time]
+path_to_gpg -d "filename"
+
+4) Task3a
+taskset 0x1 ./t3a-sender
+tasket 0x2 ./t3a-receiver
+
+-----------------Note:------------------
+Threshold
+Threshold value is hard coded to 100 in task1a,1b and 3a.
+Probe time is hard coded to 3000 in task1a,1b and 3a.
+If you want to use calibrated threshold then uncomment the "threshold=getThreshold()" line in the receiver files of task1a,1b and 3a
