@@ -10,6 +10,7 @@ further divided into the following subtasks:<br/>
 covert channel. You can assume that the file to be send will be in the current working directory
 of Gogo.<br/>
 2. After receiving the file name, Gollu creates a new blank file by appending received_ in front of
-the filename received from Gogo.<br/>
-Task 3a <br/> In this task, Gogo sends his heart (soul may be, in the form of an image file) to Gogo over the Cache Covert Channel,
+the filename received from Gogo.
+
+<br/>Task 3a <br/> In this task, Gogo sends his heart (soul may be, in the form of an image file) to Gogo over the Cache Covert Channel,
 created using FLUSH+RELOAD attack. <br/>
