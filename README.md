@@ -30,8 +30,8 @@ created using FLUSH+RELOAD attack. <br/>
 <br/>
 **#core 0-3<br/>**
 **#To launch a program on a specific core**<br/>
-> taskset -c 0 ./t1a-sender <br/>
-> taskset -c 1 ./t1a-receiver<br/>
+> taskset -c 0 ./t1a-sender 
+> taskset -c 1 ./t1a-receiver
 <br/>
 <br/>
 **#To find PID of process**<br/>
