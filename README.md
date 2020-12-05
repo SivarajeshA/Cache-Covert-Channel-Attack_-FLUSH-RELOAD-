@@ -23,14 +23,13 @@ In this task, Gogo sends his heart (soul may be, in the form of an image file) t
 created using FLUSH+RELOAD attack. <br/>
 
 
-<br/>**How to run** <br/>
+<br/>****How to run**** <br/>
 **To make**<br/>
 > make
 
 **Core 0-3<br/>
 To launch a program on a specific core**<br/>
-> taskset -c 0 ./t1a-sender 
-<br/>
+> taskset -c 0 ./t1a-sender<br/>
 > taskset -c 1 ./t1a-receiver
 
 **#To find PID of process**<br/>
