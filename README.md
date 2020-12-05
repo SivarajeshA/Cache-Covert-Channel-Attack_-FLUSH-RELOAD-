@@ -28,7 +28,7 @@ created using FLUSH+RELOAD attack. <br/>
 > make
 
 **Core 0-3<br/>
-To launch a program on a specific core**<br/>
+To launch a program(task1a) on a specific core**<br/>
 > taskset -c 0 ./t1a-sender<br/>
 > taskset -c 1 ./t1a-receiver
 
@@ -36,7 +36,7 @@ To launch a program on a specific core**<br/>
 > ps aux | grep -1 ./t1a-sender<br/>
 > ps aux | grep -1 ./t1a-receiver<br/>
 
-**#to find core of a running process**<br/>
+**#To find core of a running process**<br/>
 > taskset -cp pid<br/>
 > taskset -p 1 pid<br/>
 <br/>
