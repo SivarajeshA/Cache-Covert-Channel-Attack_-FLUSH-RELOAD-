@@ -58,7 +58,7 @@ int main(int argc, char **argv)
 	// TODO: Establish your cache covert channel	
 	map_handle_t *handle;
 	unsigned int *map;
-	map = (unsigned int *) map_file("share_mem.txt",&handle);
+	map = (unsigned int *) map_file("sample.txt",&handle);
 	assert(map!=NULL);
 
 	printf("\nEnter message to send: ");
