@@ -24,22 +24,22 @@ created using FLUSH+RELOAD attack. <br/>
 
 
 <br/>**How to run** <br/>
-**To make<br/>**
+**To make**<br/>
 > make
 <br/>
 <br/>
 **#core 0-3<br/>**
-**#To launch a program on a specific core<br/>**
+**#To launch a program on a specific core**<br/>
 > taskset -c 0 ./t1a-sender <br/>
 > taskset -c 1 ./t1a-receiver<br/>
 <br/>
 <br/>
-**#To find PID of process<br/>**
+**#To find PID of process**<br/>
 > ps aux | grep -1 ./t1a-sender<br/>
 > ps aux | grep -1 ./t1a-receiver<br/>
 <br/>
 <br/>
-**#to find core of a running process<br/>**
+**#to find core of a running process**<br/>
 > taskset -cp pid<br/>
 > taskset -p 1 pid<br/>
 <br/>
