@@ -62,7 +62,7 @@ int main(int argc, char **argv) {
 	
 	map_handle_t *handle;
 	unsigned int *map;
-	map = (unsigned int *) map_file("share_mem.txt",&handle);
+	map = (unsigned int *) map_file("sample.txt",&handle);
 	assert(map!=NULL);
 	
 	threshold=100;
